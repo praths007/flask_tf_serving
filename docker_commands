@@ -1,0 +1,4 @@
+
+sudo docker pull tensorflow/serving
+
+sudo docker run -t --rm -p 8501:8501 -v "/home/prathmesh/PycharmProjects/mnist_flask/mnist/:/models/mnist/" -e MODEL_NAME=mnist tensorflow/serving &
